@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<link rel="icon" href="images\common\icon.ico">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/carts.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<script src="./js/carts.js"></script>
+	<head>
+		<title>wu shop</title>
+	</head>
+	<body>
+		<nav class="menuBox">
+			<div class="shopImg"><img src="./images/common/wu_shop.png"></div>
+			<ul class="menuList">
+				<li class="menuItem">
+					<a href="./index.html">首頁</a>
+				</li>
+				<li class="menuItem">
+					<a href="#" class="btn-sm">Hot | 熱門商品 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+					<ul class="e04List">
+						<li class="e04Item">
+							<a href="./japan.html">日本直營</a>
+						</li>
+						<li class="e04Item">
+							<a href="./korea.html">韓系毛衣</a>
+						</li>
+						<li class="e04Item">
+							<a href="./winter.html">冬季必備</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menuItem">
+					<a href="./new.html"><span class="red-text">New !</span> | 每周新品</a>
+				</li>
+				<li class="menuItem">
+					<a href="./buyGo.html">Go | 購物去</a>
+				</li>
+				<li class="menuItem">
+					<a href="./aboutus.html">關於我們</a>
+				</li>
+			</ul>
+			<div class="shop-car">
+				<div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="http://index.html#" data-color="grey" data-size="small" data-count="true"></div>
+				<a href="#" class="btn-lg">
+					<span class="glyphicon glyphicon-shopping-cart"></span>
+				</a>
+			</div>
+		</nav>
+
+		<div class="context-row">
+			<h3 class="p text-center">結帳區</h3>
+			<hr class="shop-title-hr">
+			<div class="carts-row">
+				<table class="carts-table" cellpadding="10" border='1'>
+					<thead>
+						<tr>
+							<th>名稱</th>
+							<th width="150">價錢</th>
+							<th width="100">尺寸</th>
+							<th width="50">刪除</th>
+						</tr>
+					</thead>
+					<tbody class="carts-tbody"></tbody>
+					<tfoot>
+						<tr>
+							<td colspan="1" class="bold">結帳金額</td>
+							<td colspan="3" class="bold carts-total"></td>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div class="carts-infor">
+					<p>姓名: <input></p>
+					<p>電話: <input></p>
+					<p>地址: <input></p>
+					<p>付款方式:
+						<span class="ml-3"><input class="pay-input" data-id="1" type="radio" name="pay" checked> 貨到付款</span>
+						<span class="ml-3"><input class="pay-input" data-id="2" type="radio" name="pay"> 刷卡</span>
+					</p>
+					<div class="pay-catNum-row" style="height: 50px;">
+						<p class="pay-catNum">卡號:<input disabled>-<input disabled>-<input disabled>-<input disabled></p>
+					</div>
+				</div>
+				<hr>
+				<div class="text-center">
+					<button class="pay-submit" onclick="alert('結帳功能尚未開放!')">結帳送出</button>
+				</div>
+			</div>
+	 	</div>
+
+		<hr>
+		<div class="row footer-row">
+			<div class="col-md-12 footer-col">
+				<div>
+					<div>FOLLOW US</div>
+					<a href="https://www.facebook.com/"><img src="./images/follow/FB.png"></a>
+					<a href="https://www.instagram.com/"><img src="./images/follow/IG.png"></a>
+					<a href="https://line.me/zh-hant/"><img src="./images/follow/LINE.png"></a>
+				</div>
+				<div class="information-row">
+					<div>INFORMATION</div>
+					<p><a href="./termsOfService.html">服務條款</a></p>
+					<p><a href="./howToBuy.html">購物說明 | How to buy</a></p>
+					<p><a href="./customerService.html">客服中心 | Customer service</a></p>
+				</div>
+				<div class="contant-us-row">
+					<div>CONTACT US</div>
+					<p>TIME | MON-FRI 9:00-18:00</p>
+					<p>TEL   | 01-23456789</p>
+					<p>E-MAIL  | wowonab@gmail.com</p>
+					<p>LINE ID | @nabshop </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

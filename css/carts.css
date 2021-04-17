@@ -1,0 +1,47 @@
+.carts-row {
+	width: 60%;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+.carts-table {
+	width: 100%;
+	min-height: 100vh;
+	border: #d4d4d4;
+}
+.carts-table thead tr th {
+	padding: 10px;
+	color: #FFF;
+	background-color: #ac9c8e;
+}
+.carts-table tbody tr td, .carts-table tfoot tr td {
+	border: 0;
+	padding: 10px;
+}
+.carts-infor input:not([type="radio"]) {
+	border: 1px solid #bfad9e;
+	border-radius: 5px;
+	height: 30px;
+	margin-left: 10px;
+}
+.carts-infor input:not([type="radio"]):focus {
+	border-color: #7daaff;
+	outline: none;
+	box-shadow: 1px 1px 10px 2px #7daaff;
+}
+.carts-infor input:not([type="radio"]):focus {
+	border-color: #7daaff;
+	outline: none;
+	box-shadow: 1px 1px 10px 2px #7daaff;
+}
+.pay-catNum-row input[disabled] {
+	cursor: default;
+	background-color: #d4d4d4ad;
+}
+.carts-total {
+	font-size: 18px;
+}
+.pay-submit {
+	border: 1px solid #bfad9e;
+	border-radius: 5px;
+	height: 30px;
+}

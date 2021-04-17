@@ -1,0 +1,132 @@
+
+/* 內容區塊 */
+.hot-row {
+	width: 60%;
+	margin: 50px auto;
+	display: flex;
+}
+.hot-list {
+	width: 10%;
+	list-style:none;
+	padding-right: 15px;
+	border-right: 1px solid #DCDCDC;
+}
+.hot-list li a {
+	color: black;
+	text-decoration:none;
+}
+.hot-list li{
+	cursor: pointer;
+	font-weight: bold;
+	margin: 15px 0;
+	height: 30px;
+}
+.hot-list li:hover{
+	border-bottom: 1px solid #DCDCDC;
+}
+.hot-img-box {
+	font-weight: bold;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+}
+.hot-img {
+	width: 410px;
+	border-radius: 4px;
+}
+.hot-img:hover {
+	transform:scale(1.1, 1.1);
+}
+.hot-img-content {
+	font-size: 16px;
+}
+.hot-img-more {
+	font-size: 14px;
+	float: right;
+	margin-top: 20px;
+	color: rgb(0, 86, 136);
+	font-weight: 100;
+}
+.hot-img-more:hover {
+	color: rgb(76, 154, 199);
+	font-weight: bold;
+}
+.buyGo-row{
+	display: flex;
+	width: 100%;
+  flex-wrap: wrap;
+}
+.buyGo-go {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(17, 17, 17, 0.685);
+}
+.buyGo-img-box{
+	overflow: hidden;
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 50px;
+  position: relative;
+}
+.buyGo-img-box:hover .buyGo-go{
+	display: block;
+}
+.buyGo-col img{
+	width: 200px;
+}
+.buyGo-col {
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+	color:burlywood;
+}
+.buyThis-col {
+	display: flex;
+}
+.buyThis-img-box {
+	overflow: hidden;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 50px;
+  position: relative;
+}
+.buyThis-img {
+	width: 300px;
+	min-height: 300px
+}
+.buyThis-img-list img{
+	width: 80px;
+	min-height: 60px;
+	cursor: pointer;
+	padding: 10px;
+}
+.buyThis-content-money {
+	font-size: 20px;
+}
+.buyThis-size-btn {
+	background-color: #FFF;
+	border: 1px solid #A39182;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 10px 20px;
+	color: #A39182;
+}
+.buyThis-size-btn-active {
+	background-color: #A39182;
+	border: 0;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 10px 20px;
+	color: #FFF;
+}
+.buyThis-carts {
+	background-color: #A39182;
+	border: 0;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 10px 20px;
+	color: #FFF;
+	width: 100%;
+}

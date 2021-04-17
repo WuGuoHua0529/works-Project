@@ -1,0 +1,162 @@
+.ml3 {
+	font-weight: 900;
+	font-size: 3.5em;
+	padding-top: 90px;
+	position: absolute;
+    z-index: 10;
+    top: 50%;
+	left: 20%;
+	color: #FFF;
+	font-size: 88px;
+}
+/* 縮放 男人 */
+.Zoom-man-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 男人 */
+.may-man-row{
+	margin: 50px 0;
+	padding-left: 100px;
+	opacity: 0;
+	transition:all 1.5s;
+}
+.may-man-row {
+	transform:translateY(10%) scale(0.95);
+}
+.may-man-row.active {
+	opacity:1;
+	transform:translateY(0%) scale(1);
+}
+.may-man-row img{
+	width: 500px;
+}
+/* 翻轉 */
+.Zoom-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.Zoom-col {
+	overflow:hidden;
+	border-radius: 10px;
+	height: 300px;
+	width: 200px;
+  margin: 0 50px;
+	position: relative;
+}
+.Zoom-col-img {
+	height: 100%;
+	width: 100%;
+	transform:scale(1,1);
+	transition: all 1s ease-out;
+}
+.Zoom-col-img:hover{
+	transform:scale(1.2,1.2);
+}
+/* 翻轉 女人 */
+.Flip-women-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 女人 */
+.may-women-row{
+	margin: 50px 0;
+	padding-right: 100px;
+	opacity: 0;
+	transition:all 1.5s;
+}
+.may-women-row {
+	transform:translateY(-10%) scale(0.95);
+}
+.may-women-row.active {
+	opacity:1;
+	transform:translateY(0%) scale(1);
+}
+.may-women-row img{
+	width: 500px;
+}
+/* 翻轉 */
+.Flip-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.Flip-col {
+	overflow:hidden;
+	border-radius: 10px;
+	height: 300px;
+	width: 200px;
+  margin: 0 50px;
+	position: relative;
+}
+.Flip-col-img {
+	height: 100%;
+	width: 100%;
+	transform:scale(1,1);
+	transition: all 1s ease-out;
+}
+.Flip-col-img:hover{
+	transform:scale(1.2,1.2);
+}
+/* 分隔 */
+.hr-img {
+	text-align: center;
+}
+.hr-img img {
+	width: 30%;
+}
+/* 五月 */
+.may-img-row{
+	display: flex;
+	justify-content: flex-end;
+	margin: 50px 0;
+	position: relative;
+}
+.may-img-row img{
+	position: absolute;
+}
+.may-imgbg-row {
+	background: url("../images/common/maybg.png")center center no-repeat;
+	opacity: 0.7;
+	width: 100%;
+	min-height: 1335px;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* 主題 */
+.theme-img-row {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+.theme-col img {
+	width: 100%;
+	margin: 0 10px;
+}
+.theme-col {
+	width: 360px;
+	margin: 0 10px;
+	position: relative;
+}
+.theme-col .theme-black {
+	color: rgba(255, 255, 255, 0.733);
+	display: none;
+	font-family:monospace;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 20px;
+}
+.theme-col:hover .theme-black {
+	display: block;
+	width: 100%;
+	height: 80px;
+	bottom: 0%;
+	left: 3%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.609);
+}
