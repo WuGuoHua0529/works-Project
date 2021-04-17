@@ -3,10 +3,12 @@ function showBuyData() {
   let total = 0
   let tbodyHtml = ''
   cartsData.forEach(item => {
-    total = total+Number(item.money)
+    total = total+Number(item.buyMoney)
     tbodyHtml += '<tr>'+
                   '<td>'+item.name+'</td>'+
                   '<td>$'+item.money+'</td>'+
+                  '<td>'+item.buyNum+'</td>'+
+                  '<td>$'+item.buyMoney+'</td>'+
                   '<td>'+item.buySize+'</td>'+
                   '<td><img src="./images/common/trash.png" style="cursor: pointer;" onclick=removeBuy('+item.key+')></td>'+
                 '</tr>'

@@ -94,7 +94,7 @@ function buy (key) {
         '<h2 class="py-2 bold">'+data.name+'</h2>'+
         '<p class="buyThis-content-money">NT$ '+data.money+'</p>'+
         '<p class="my-2">尺寸: '+sizeHtml+'</p>'+
-        '<div class="my-5">數量: <input class="ml-2" min="1" type="number" value="1"></div>'+
+        '<div class="my-5">數量: <input class="ml-2 buy-num" min="1" type="number" value="1"></div>'+
         '<button class="my-5 buyThis-carts" onclick=goCarts('+clickData+')>加入購物車</button>'+
       '</div>'+
     '</div>'
@@ -111,19 +111,22 @@ function selectImg (url) {
 };
 function goCarts (data) {
   const buySize = $('.buyThis-size-btn-active').text()
+  const buyNum = $('.buy-num').val()
   const localData = localStorage.getItem('cartsData')
   data.buySize = buySize
+  data.buyNum = buyNum
+  data.buyMoney = Number(data.money)*Number(buyNum) 
   if (localData) {
     let nowcarts = JSON.parse(localData)
-    const is_bus = nowcarts.some(it => it.key == data.key)
-    if (is_bus) {
-      alert("已經加入購物車摟!")
-      return false
-    } else {
+    // const is_bus = nowcarts.some(it => it.key == data.key)
+    // if (is_bus) {
+    //   alert("已經加入購物車摟!")
+    //   return false
+    // } else {
       nowcarts.push(data)
       localStorage.setItem('cartsData', JSON.stringify(nowcarts))
       alert("加入完成!")
-    }
+    // }
   } else {
     localStorage.setItem('cartsData', JSON.stringify([data]))
     alert("加入完成!")
