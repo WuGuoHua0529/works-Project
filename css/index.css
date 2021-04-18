@@ -14,11 +14,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 100px;
 }
 /* 男人 */
 .may-man-row{
 	margin: 50px 0;
-	padding-left: 100px;
+	/* padding-left: 100px; */
 	opacity: 0;
 	transition:all 1.5s;
 }
@@ -58,6 +59,7 @@
 }
 /* 翻轉 女人 */
 .Flip-women-row {
+	padding: 0 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -65,7 +67,7 @@
 /* 女人 */
 .may-women-row{
 	margin: 50px 0;
-	padding-right: 100px;
+	/* padding-right: 100px; */
 	opacity: 0;
 	transition:all 1.5s;
 }
