@@ -18,6 +18,8 @@
 }
 /* 男人 */
 .may-man-row{
+	min-width: 350px;
+	max-width: 500px;
 	margin: 50px 0;
 	/* padding-left: 100px; */
 	opacity: 0;
@@ -31,7 +33,7 @@
 	transform:translateY(0%) scale(1);
 }
 .may-man-row img{
-	width: 80%;
+	width: 100%;
 }
 /* 翻轉 */
 .Zoom-row {
@@ -67,6 +69,8 @@
 /* 女人 */
 .may-women-row{
 	margin: 50px 0;
+	min-width: 350px;
+	max-width: 500px;
 	/* padding-right: 100px; */
 	opacity: 0;
 	transition:all 1.5s;
@@ -79,7 +83,7 @@
 	transform:translateY(0%) scale(1);
 }
 .may-women-row img{
-	width: 80%;
+	width: 100%;
 }
 /* 翻轉 */
 .Flip-row {
