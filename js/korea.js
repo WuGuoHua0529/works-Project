@@ -21,7 +21,7 @@ $(document).ready(function (){
       '<div class="ml-5 mt-4">'+
         '<div class="hot-img-box">'+
           '<img class="hot-img" src="./images/korea/'+item.url+'.png">'+
-          '<div class="ml-5" style="width:500px;">'+
+          '<div class="ml-5 hot-infor">'+
             '<p>'+item.name+'</p>'+
             '<p class="hot-img-content">'+item.content+'</p>'+
             '<p class="hot-img-more">more</p>'+

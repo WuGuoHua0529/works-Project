@@ -22,6 +22,9 @@
 .hot-list li:hover{
 	border-bottom: 1px solid #DCDCDC;
 }
+.hot-infor {
+	width: 50%;
+}
 .hot-img-box {
 	font-weight: bold;
 	font-size: 30px;
@@ -29,7 +32,7 @@
 	align-items: center;
 }
 .hot-img {
-	width: 410px;
+	width: 50%;
 	border-radius: 4px;
 }
 .hot-img:hover {

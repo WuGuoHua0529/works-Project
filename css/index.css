@@ -14,7 +14,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 100px;
+	padding: 0 80px;
 }
 /* 男人 */
 .may-man-row{
@@ -31,7 +31,7 @@
 	transform:translateY(0%) scale(1);
 }
 .may-man-row img{
-	width: 500px;
+	width: 80%;
 }
 /* 翻轉 */
 .Zoom-row {
@@ -45,7 +45,7 @@
 	border-radius: 10px;
 	height: 300px;
 	width: 200px;
-  margin: 0 50px;
+  margin: 0 3%;
 	position: relative;
 }
 .Zoom-col-img {
@@ -59,7 +59,7 @@
 }
 /* 翻轉 女人 */
 .Flip-women-row {
-	padding: 0 100px;
+	padding: 0 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -79,7 +79,7 @@
 	transform:translateY(0%) scale(1);
 }
 .may-women-row img{
-	width: 500px;
+	width: 80%;
 }
 /* 翻轉 */
 .Flip-row {
@@ -93,7 +93,7 @@
 	border-radius: 10px;
 	height: 300px;
 	width: 200px;
-  margin: 0 50px;
+  margin: 0 3%;
 	position: relative;
 }
 .Flip-col-img {
@@ -115,11 +115,12 @@
 /* 五月 */
 .may-img-row{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	margin: 50px 0;
 	position: relative;
 }
 .may-img-row img{
+	width: 80%;
 	position: absolute;
 }
 .may-imgbg-row {
@@ -138,7 +139,6 @@
 }
 .theme-col img {
 	width: 100%;
-	margin: 0 10px;
 }
 .theme-col {
 	width: 360px;
