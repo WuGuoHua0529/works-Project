@@ -2,10 +2,10 @@
 
 ## 使用技術
 
-> Html
-> Css
-> Js
-> JQuery
+* Html
+* Css
+* Js
+* JQuery
 
 # Demn
 
