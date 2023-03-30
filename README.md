@@ -7,6 +7,6 @@
 * Js
 * JQuery
 
-# Demn
+# Demo
 
 https://wuguohua0529.github.io/wuShop-Project/home
